@@ -6,6 +6,9 @@ public class Main {
     public static void main(String[] args) {
         function fungsi = new function();
         Minggu minggu = new Minggu();
+        bulan Bulan = new bulan();
+        tahun Tahun = new tahun();
+
         Scanner scan = new Scanner(System.in);
 
         int input1 = 0;
@@ -40,16 +43,20 @@ public class Main {
                 System.out.println("Input Salah!!!");
         }
 
-
-        switch (jawab1) {
+       switch (jawab1) {
             case 1 :
                 System.out.println( input1 + " Minggu " + " = " + Minggu.hari(input1) + " Hari ");
                 System.out.println( input1 + " Minggu " + " = " + Minggu.bulan(input1) + " Bulan ");
-                System.out.println( input1 + " Minggu " + " = " + Minggu.hari(input1) + " Hari ");
-                System.out.println( input1 + " Minggu " + " = " + Minggu.hari(input1) + " Hari ");
-
+                break;
+            case 2 :
+               System.out.println( input2 + " Bulan " + " = " + Bulan.hari(input2) + " Hari ");
+               System.out.println( input2 + " Bulan " + " = " + Bulan.minggu(input2) + " Minggu ");
+               break;
+             case 3 :
+               System.out.println( input3 + " Tahun " + " = " + Tahun.hari(input3) + " Hari ");
+               System.out.println( input3 + " Tahun " + " = " + Tahun.minggu(input3) + " Minggu ");
+               System.out.println( input3 + " Tahun " + " = " + Tahun.bulan(input3) + " Bulan ");
         }
-
 
 
     }
